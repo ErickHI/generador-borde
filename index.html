@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Generador de Borde</title>
+</head>
+<body>
+    <header class="text-center">
+        <h1 class="text-primary fs-4 fw-bold">Online Border Radius Generator</h1>
+    </header>
+    <div class="container col-7">
+        <div class="rango-contenedor row p-1">
+            <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-1">
+                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        All the same
+                    </label>
+                </div>
+            </div>
+            <div class="espacio col-6"></div>
+            <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-2">
+                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center row p-1">
+            <div class="espacio col-3"></div>
+            <div class="col-6" style="height: 200px;"><textarea name="" id="" class="w-100 h-100 border-primary border-5 bg-secondary bg-opacity-10" ></textarea></div>
+            <div class="espacio col-3"></div>
+        </div>
+        <div class="rango-contenedor row p-1">
+            <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-3">
+                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+            </div>
+            <div class="espacio col-6"></div>
+            <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-4">
+                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <label for="width" class="me-2">Width:</label>
+            <button class="btn-primary me-4 p-0 rounded">1</button>
+            <input type="range" name="" id="" class="col-4" min="0" max="30" value="5">
+        </div>
+        <div class="ms-5 mt-3">
+            <label for="style" class="me-3">Style:</label>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: solid; width: 4.5em;">solid</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: dotted; width: 4.5em;">dotted</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: dashed; width: 4.5em;">dashed</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: double; width: 4.5em;">double</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: groove; width: 4.5em;">groove</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: ridge; width: 4.5em;">ridge</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: inset; width: 4.5em;">inset</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: outset; width: 4.5em;">outset</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: hidden; width: 4.5em;">hidden</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: none; width: 4.5em;">none</button>
+        </div>
+        <div class="ms-5 mt-3">
+            <label for="color" class="me-3">Color:</label>
+            <input type="color"id="color" class="me-2">
+            <input type="range" id="transparencia" class="col-3" min="0" max="1" value="1">
+            <button class="btn-primary p-0 rounded">1</button>
+        </div>
+        <div class="ms-5 mt-3">
+            <label for="style" class="me-3">Style:</label>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">All</button>
+                <button class="border-end-0 border-bottom-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="width: 5em;">Top</button>
+                <button class="border-top-0 border-bottom-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">Right</button>
+                <button class="border-end-0 border-top-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">Bottom</button>
+                <button class="border-end-0 border-bottom-0 border-top-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">Left</button>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

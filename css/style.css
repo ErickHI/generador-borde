@@ -1,0 +1,12 @@
+.curvo-1 {
+    border-radius: 40px 40px 0px 40px;
+}
+.curvo-2 {
+    border-radius: 40px 40px 40px 0px;
+}
+.curvo-3 {
+    border-radius: 40px 0px 40px 40px;
+}
+.curvo-4 {
+    border-radius: 0px 40px 40px 40px;
+}

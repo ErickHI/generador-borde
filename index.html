@@ -15,68 +15,68 @@
     <div class="container col-7">
         <div class="rango-contenedor row p-1">
             <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-1">
-                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
-                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+                <div><input type="number" id="inputLT" class="col text-center col-4 border-primary rounded fw-bold text-primary" min="0" value="0" max="40"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0" id="radiusLT"></div>
                 <div>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" id="allRadius">
+                    <label class="form-check-label" for="allRadius">
                         All the same
                     </label>
                 </div>
             </div>
             <div class="espacio col-6"></div>
             <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-2">
-                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
-                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+                <div><input type="number" id="inputRT" class="col text-center col-4 border-primary rounded fw-bold text-primary" min="0" value="0" max="40"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0" id="radiusRT"></div>
             </div>
         </div>
         <div class="d-flex justify-content-center row p-1">
             <div class="espacio col-3"></div>
-            <div class="col-6" style="height: 200px;"><textarea name="" id="" class="w-100 h-100 border-primary border-5 bg-secondary bg-opacity-10" ></textarea></div>
+            <div class="col-6" style="height: 200px;"><textarea id="taReview" class="w-100 h-100 bg-secondary bg-opacity-10" style="border-color: #0d6efd; border-width: 5px;"></textarea></div>
             <div class="espacio col-3"></div>
         </div>
         <div class="rango-contenedor row p-1">
             <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-3">
-                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
-                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+                <div><input type="number" id="inputLD" class="col text-center col-4 border-primary rounded fw-bold text-primary" min="0" value="0" max="40"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0" id="radiusLD"></div>
             </div>
             <div class="espacio col-6"></div>
             <div class="rango border border-secondary bg-primary bg-opacity-25 col-3 p-2 text-center curvo-4">
-                <div><input type="number" name="" id="" class="col text-center col-4 border-primary rounded fw-bold text-primary"></div>
-                <div><input type="range" class="col-9" min="0" max="40" value="0"></div>
+                <div><input type="number" id="inputRD" class="col text-center col-4 border-primary rounded fw-bold text-primary" min="0" value="0" max="40"></div>
+                <div><input type="range" class="col-9" min="0" max="40" value="0" id="radiusRD"></div>
             </div>
         </div>
         <div class="mt-4">
             <label for="width" class="me-2">Width:</label>
-            <button class="btn-primary me-4 p-0 rounded">1</button>
-            <input type="range" name="" id="" class="col-4" min="0" max="30" value="5">
+            <button class="btn-primary me-4 p-0 rounded" id="widthButton">1</button>
+            <input type="range" id="widthBorder" class="col-4" min="0" max="30" value="5">
         </div>
         <div class="ms-5 mt-3">
             <label for="style" class="me-3">Style:</label>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: solid; width: 4.5em;">solid</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: dotted; width: 4.5em;">dotted</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: dashed; width: 4.5em;">dashed</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: double; width: 4.5em;">double</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: groove; width: 4.5em;">groove</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: ridge; width: 4.5em;">ridge</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: inset; width: 4.5em;">inset</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: outset; width: 4.5em;">outset</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: hidden; width: 4.5em;">hidden</button>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: none; width: 4.5em;">none</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: solid; width: 4.5em;" id="solidButton">solid</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: dotted; width: 4.5em;" id="dottedButton">dotted</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: dashed; width: 4.5em;" id="dashedButton">dashed</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: double; width: 4.5em;" id="doubleButton">double</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: groove; width: 4.5em;" id="grooveButton">groove</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: ridge; width: 4.5em;" id="ridgeButton">ridge</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: inset; width: 4.5em;" id="insetButton">inset</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: outset; width: 4.5em;" id="outsetButton">outset</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: hidden; width: 4.5em;" id="hiddenButton">hidden</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10" style="border-style: none; width: 4.5em;" id="noneButton">none</button>
         </div>
         <div class="ms-5 mt-3">
             <label for="color" class="me-3">Color:</label>
-            <input type="color"id="color" class="me-2">
-            <input type="range" id="transparencia" class="col-3" min="0" max="1" value="1">
-            <button class="btn-primary p-0 rounded">1</button>
+            <input type="color" id="color" class="me-2" value="#0d6efd">
+            <input type="range" id="transparencia" class="col-3" min="0" max="255" value="255">
+            <button class="btn-primary p-0 rounded" id="colorButton">1</button>
         </div>
         <div class="ms-5 mt-3">
             <label for="style" class="me-3">Style:</label>
-                <button class="border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">All</button>
-                <button class="border-end-0 border-bottom-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="width: 5em;">Top</button>
-                <button class="border-top-0 border-bottom-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">Right</button>
-                <button class="border-end-0 border-top-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">Bottom</button>
-                <button class="border-end-0 border-bottom-0 border-top-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;">Left</button>
+                <button class="border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;" id="allButton">All</button>
+                <button class="border-end-0 border-bottom-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="width: 5em;" id="topButton">Top</button>
+                <button class="border-top-0 border-bottom-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;" id="rightButton">Right</button>
+                <button class="border-end-0 border-top-0 border-start-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;" id="bottomButton">Bottom</button>
+                <button class="border-end-0 border-bottom-0 border-top-0 border-primary border-5 bg-secondary bg-opacity-10 me-1" style="border-style: solid; width: 5em;" id="leftButton">Left</button>
         </div>
     </div>
 
